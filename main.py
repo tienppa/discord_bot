@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 import config
-from utils import scheduler
+from utils import wakeup_scheduler
+from utils import telegram_scheduler
 from cogs.greetings import GreetingsCog
 from cogs.birthday import BirthdayCog
 from cogs.quotes import QuotesCog 
@@ -23,6 +24,7 @@ async def on_ready():
     
     print(f'{bot.user} has connected to Discord!')
 
-scheduler.schedule_wakeup_task(bot, config.CHANNEL_ID)  
+wakeup_scheduler.schedule_wakeup_task(bot, config.CHANNEL_ID)  
+telegram_scheduler.schedule_telegram_task(bot, config.TELEGRAM_BOT_TOKEN, config.TELEGRAM_CHAT_ID)
 
 bot.run(config.DISCORD_TOKEN)

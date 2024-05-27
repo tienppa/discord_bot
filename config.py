@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 # Load environment variables from .env file, regardless of whether debugging or not
 load_dotenv()
 
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
+
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 # CHANNEL_ID = int(os.getenv('CHANNEL_ID'))
