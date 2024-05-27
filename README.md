@@ -1,16 +1,46 @@
 # discord_bot
-my_project/
-├── my_env/               # Virtual environment directory
-├── cogs/                 # Directory for your bot cogs
-│   ├── __init__.py
-│   ├── birthday.py
-│   ├── greetings.py
-│   └── quotes.py
-├── scheduler/
-│   ├── __init__.py
-│   ├── wakeup_scheduler.py
-│   └── telegram_scheduler.py
-├── config.py
-├── main.py
-├── requirements.txt
-└── README.md
+
+Welcome to the repository for My Discord Bot! This bot is designed to enhance your Discord server with features like:
+Greetings: Welcomes new members with a friendly message.
+Birthday Wishes: Celebrates members' birthdays.
+Inspirational Quotes: Provides daily quotes with beautiful images to inspire and motivate.
+Scheduled Tasks: Wakes up the server with a cheerful message at a set time.
+
+
+## Installation
+```base
+# SSH into your server: 
+ssh your_username@your_server_ip
+
+# Clone the Repository:
+git clone https://github.com/your-username/your-repository.git
+
+# Create Virtual Environment
+Navigate to your bot's directory: cd /home/your_username/my_discord_bot
+Activate the virtual environment: source my_bot_env/bin/activate
+
+# Install Dependencies:
+pip install -r requirements.txt
+
+# Create User:
+sudo adduser botuser
+
+# Grant Permissions:
+sudo usermod -aG sudo botuser
+sudo chown -R botuser:botuser /home/code/discord_bot
+
+# Reload the systemd daemon: 
+sudo systemctl daemon-reload
+
+# Restart the service: 
+sudo systemctl restart discord-bot.service
+
+# Check the status: 
+sudo systemctl status discord-bot.service
+
+# Examine System Logs: 
+journalctl -u discord-bot.service
+```
+
+
+
