@@ -1,10 +1,10 @@
 # discord_bot
 
-Welcome to the repository for My Discord Bot! This bot is designed to enhance your Discord server with features like:
-Greetings: Welcomes new members with a friendly message.
-Birthday Wishes: Celebrates members' birthdays.
-Inspirational Quotes: Provides daily quotes with beautiful images to inspire and motivate.
-Scheduled Tasks: Wakes up the server with a cheerful message at a set time.
+Welcome to the repository for My Discord Bot! This bot is designed to enhance your Discord server with features like:  
+Greetings: Welcomes new members with a friendly message.  
+Birthday Wishes: Celebrates members' birthdays.  
+Inspirational Quotes: Provides daily quotes with beautiful images to inspire and motivate.  
+Scheduled Tasks: Wakes up the server with a cheerful message at a set time.  
 ![Image Alt Text](https://github.com/tienppa/discord_bot/assets/170253215/ad63a5f1-d01d-4087-be67-f2e1537440a4)
 
 ## Installation
